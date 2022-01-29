@@ -1,0 +1,30 @@
+﻿<Window x:Class="Animals.WindowAnimals"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animals"
+        mc:Ignorable="d"
+        Title="Animals" Height="475" Width="850">
+    <Canvas  Background="AliceBlue">
+
+        <DataGrid Background="White" Canvas.Left="10" Canvas.Top="10" AutoGenerateColumns="False" AlternatingRowBackground="LightBlue" Height="340" Width="600" x:Name="dgAnimals" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Species" Binding="{Binding species}"/>
+                <DataGridTextColumn Header="Age" Binding="{Binding age}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Visibility="Hidden" Canvas.Left="700" Canvas.Top="120" Height="40" Width="100" Background="LightGray" Content="Modify"    Click="Button_Modify"/>
+        <Button Canvas.Left="700" Canvas.Top="180" Height="40" Width="100" Background="LightGray" Content="Insert"    Click="Button_Insert"/>
+        <Button Canvas.Left="700" Canvas.Top="230" Height="40" Width="100" Background="LightGray" Content="Delete"    Click="Button_Delete"/>
+        <Button Canvas.Left="700" Canvas.Top="280" Height="40" Width="100" Background="LightGray" Content="Update"    Click="Button_Update"/>
+        <Button Canvas.Left="550" Canvas.Top="370" Height="40" Width="260" Background="LightGray" Content=" Back"    Click="Button_Back"/>
+    </Canvas>
+    
+    <!--<Button Height="40" Width="100" Background="LightGray" VerticalAlignment="Top"  Content="Insert"    Click="Button_Insert" Margin="22,95,22,0" Grid.Column="1"/>-->
+    <!--<Button Height="40" Width="100" Background="LightGray" VerticalAlignment="Top"  Content="Delete"    Click="Button_Delete" Margin="22,217,22,0" Grid.Column="1"/>-->
+    <!--<TextBox Name="textBoxId" Height="20" Width="70" Grid.Column="1" Margin="37,46,37,368"></TextBox>-->
+</Window>
+ 

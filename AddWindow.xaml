@@ -1,0 +1,27 @@
+﻿<Window x:Class="Animals.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animals"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="400" Width="500">
+    <Canvas Background="AliceBlue">
+        <Label   Canvas.Left="75" Canvas.Top="16" Name="labelIdAW"  Content="ID:"></Label>
+        <TextBox Canvas.Left="100" Canvas.Top="20" Name="textBoxIdAW" Height="20" Width="100"/>
+        
+        <Label   Canvas.Left="55" Canvas.Top="60" Name="labelNameAW"  Content="Name:"></Label>
+        <TextBox Canvas.Left="100" Canvas.Top="64" Name="textBoxNameAW" Height="20" Width="100"/>
+
+        <Label   Canvas.Left="48" Canvas.Top="104" Name="labelSpeciesAW"  Content="Species:"></Label>
+        <TextBox Canvas.Left="100" Canvas.Top="108" Name="textBoxSpeciesAW" Height="20" Width="100"/>
+
+        <Label   Canvas.Left="66" Canvas.Top="148" Name="labelAgeAW"  Content="Age:"></Label>
+        <TextBox Canvas.Left="100" Canvas.Top="152" Name="textBoxAgeAW" Height="20" Width="100"/>
+        
+        <Button x:Name="buttonIns" Canvas.Top="15"  Canvas.Left="250" Height="40" Width="100" Background="LightGray" Content="Insert"  Click="Button_InsertAW"/>
+        <Button x:Name="buttonUpd" Canvas.Top="75"  Canvas.Left="250" Height="40" Width="100" Background="LightGray" Content="Update"  Click="Button_UpdateAW"/>
+        <Button x:Name="buttonDel" Canvas.Top="135" Canvas.Left="250" Height="40" Width="100" Background="LightGray" Content="Delete"  Click="Button_DeleteAW"/>
+        <Button Canvas.Top="200" Canvas.Left="150" Height="40" Width="150" Background="LightGray" Content="Back"    Click="Button_BackAW"/>
+    </Canvas>
+</Window>
