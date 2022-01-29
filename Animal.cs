@@ -8,18 +8,18 @@ using System.Xml.Serialization;
 
 namespace Animals
 {
-    /*[XmlRoot(ElementName = "Animals")]*/
+
     public class Animal
     {
         public int id
         { get; set; }
-        /* [XmlAttribute("name")]*/
+
         public string name
         { get; set; }
-        /*[XmlAttribute("species")]*/
+
         public string species
         { get; set; }
-       /*[XmlAttribute("age")]*/
+
         public int age
         { get; set; }
         public Animal(int id,string name, string species, int age)

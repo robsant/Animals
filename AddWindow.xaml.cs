@@ -46,8 +46,15 @@ namespace Animals
         }
         private void Button_InsertAW(object sender, RoutedEventArgs e)
         {
-            Baza.Insert(textBoxIdAW.Text,textBoxNameAW.Text,textBoxSpeciesAW.Text,textBoxAgeAW.Text, dg);     
-            clearTB();
+            try
+            {
+                Baza.Insert(textBoxIdAW.Text, textBoxNameAW.Text, textBoxSpeciesAW.Text, textBoxAgeAW.Text, dg);
+                clearTB();
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
         private void Button_DeleteAW(object sender, RoutedEventArgs e)
         {
@@ -56,7 +63,14 @@ namespace Animals
         }
         private void Button_UpdateAW(object sender, RoutedEventArgs e)
         {
-            Baza.Update(textBoxIdAW.Text, textBoxNameAW.Text, textBoxSpeciesAW.Text, textBoxAgeAW.Text, dg);
+            try
+            {
+                Baza.Update(textBoxIdAW.Text, textBoxNameAW.Text, textBoxSpeciesAW.Text, textBoxAgeAW.Text, dg);
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
         private void Button_BackAW(object sender, RoutedEventArgs e)
         {
