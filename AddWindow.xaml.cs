@@ -18,6 +18,12 @@ namespace Animals
     public partial class AddWindow : Window
     {
         public DataGrid dg;
+        public AddWindow(DataGrid dgAnimals)
+        {
+                 //default
+            InitializeComponent();
+            dg = dgAnimals;
+        }
         public AddWindow(DataGrid dgAnimals, Animal animal)
         {       //update or delete
             InitializeComponent();
@@ -31,14 +37,9 @@ namespace Animals
             textBoxIdAW.IsEnabled = false;
         }
 
-        public AddWindow(DataGrid dgAnimals)
-        {
-            InitializeComponent();
-            dg = dgAnimals;
-        }
         public AddWindow(DataGrid dgAnimals,int i)
         {
-            //insert only
+             //insert only
             InitializeComponent();
             dg = dgAnimals;
             buttonDel.Visibility = Visibility.Hidden;
