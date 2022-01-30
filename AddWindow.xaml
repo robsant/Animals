@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Animals"
         mc:Ignorable="d"
         Title="AddWindow" Height="400" Width="500">
+    
     <Canvas Background="AliceBlue">
         <Label   Canvas.Left="75" Canvas.Top="16" Name="labelIdAW"  Content="ID:"></Label>
         <TextBox Canvas.Left="100" Canvas.Top="20" Name="textBoxIdAW" Height="20" Width="100"/>
