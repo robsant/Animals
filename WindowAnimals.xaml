@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Animals" Height="475" Width="850">
    
-            <Window.Resources>
+    <Window.Resources>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="MediumSeaGreen"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
         <SolidColorBrush x:Key="Button.Pressed.Background" Color="DarkGreen"/>
@@ -48,7 +48,6 @@
         </ControlTemplate>
     </Window.Resources>
     <Canvas  Background="AliceBlue">
-
         <DataGrid Background="White" Canvas.Left="10" Canvas.Top="10" AutoGenerateColumns="False" AlternatingRowBackground="LightBlue" Height="340" Width="600" x:Name="dgAnimals" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding id}"/>

@@ -68,7 +68,6 @@ namespace Animals
             DataTable dt = new DataTable();
             da.Fill(dt);
 
-
               List<Animal> items = new List<Animal>();
               foreach (DataRow row in dt.Rows)
               {
@@ -81,7 +80,6 @@ namespace Animals
                 }
                 items.Add(animal);           
               }
-
             //z data table dane, kolekcja animals, kolekcja animals do item source DONE
             dgAnimals.ItemsSource = items;
 

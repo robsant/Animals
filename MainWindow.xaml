@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Animals"
         mc:Ignorable="d"
         Title="Animals" Height="500" Width="850">
-    
+
     <Window.Resources>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="MediumSeaGreen"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
@@ -47,7 +47,6 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Window.Resources>
-    
     <Canvas Background="AliceBlue">
         <Image  Canvas.Left="370" Canvas.Top="70" Width="400" Source="C:/Users/Robert/Desktop/Programowanie 3/proot.jpg"></Image>
         <Label  Canvas.Left="350" Foreground="Maroon"   Content="Zwierzeta" FontSize="36" FontFamily="SimSun-ExtB" FontWeight="bold"/>
@@ -55,6 +54,5 @@
 
         <Button Canvas.Left="50"  Canvas.Top="300" Height="40" Width="260" Background="LightGray"  Content="Raport"    Click="Button_OpenRaport" FontWeight="Bold" />
         <Label  Canvas.Left="500" Canvas.Top="410" Foreground="Maroon"  Content="Autor: Robert Szczygiel" FontSize="18" FontFamily="SimSun-ExtB" FontWeight="bold"/>
-
     </Canvas>
 </Window>
