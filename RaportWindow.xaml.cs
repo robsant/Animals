@@ -32,6 +32,7 @@ namespace Animals
 
                 foreach (var dataSource in this.ctlReport.GetDataSources())
                 {
+                    //new System.Net.NetworkCredential("ssrs", "RDLReport1");
                     BoldReports.Windows.DataSourceCredentials crdentials = new BoldReports.Windows.DataSourceCredentials();
                     crdentials.Name = dataSource.Name;
                     crdentials.UserId = null;
@@ -42,7 +43,7 @@ namespace Animals
                 this.ctlReport.SetDataSourceCredentials(dataSourceCrdentials);
             };
             this.ctlReport.ReportServerUrl = "http://desktop-9ehfhc1/ReportServer"; //adres do serwera
-            this.ctlReport.ReportServerCredential = System.Net.CredentialCache.DefaultCredentials;
+            this.ctlReport.ReportServerCredential = /*new System.Net.NetworkCredential("ssrs", "RDLReport1");//nazwa uzytkownika i haslo*/System.Net.CredentialCache.DefaultCredentials;
             this.ctlReport.ReportPath = "/asdasd/Report1"; //The report path should be in the format of  "/folder name/report name"
             this.ctlReport.RefreshReport();
 

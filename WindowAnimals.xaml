@@ -48,7 +48,7 @@
         </ControlTemplate>
     </Window.Resources>
     <Canvas  Background="AliceBlue">
-        <DataGrid Background="White" Canvas.Left="10" Canvas.Top="10" AutoGenerateColumns="False" AlternatingRowBackground="LightBlue" Height="340" Width="600" x:Name="dgAnimals" >
+        <DataGrid Background="White" Canvas.Left="10" Canvas.Top="10" AutoGenerateColumns="False" AlternatingRowBackground="LightBlue" IsReadOnly="True"  x:Name="dgAnimals" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
                 <DataGridTextColumn Header="Name" Binding="{Binding name}"/>
